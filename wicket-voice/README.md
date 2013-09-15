@@ -69,7 +69,7 @@ here:
 ```java
 add(new KeywordBasedBehavior() {
 
-	@Override protected void noKeywordRecognized(String text, AjaxRequestTarget target) { 
+	protected void noKeywordRecognized(String text, AjaxRequestTarget target) { 
 		// when none of defined	keywords is recognized, but hey, there was something ... 
 	}
 
