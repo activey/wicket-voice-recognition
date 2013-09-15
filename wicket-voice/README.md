@@ -42,8 +42,8 @@ Behavior implements Voice Recognition JavaScript callbacks around given componen
 It's just a complex wrapped around some of html components:
 
 
-* <input type="text" />
-* <textarea />
+* ```<input type="text" />```
+* ```<textarea />```
 
 To use it, just do simply:
 
