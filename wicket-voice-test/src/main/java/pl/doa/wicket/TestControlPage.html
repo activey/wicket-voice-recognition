@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en" xmlns:wicket="http://wicket.apache.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Language" content="en"/>
+    <title>Apache Wicket Voice Recognition</title>
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <div class="large-12 columns">
+        <h2>Apache Wicket Voice Recognition Test</h2>
+        <hr/>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <dl class="sub-nav">
+            <dt>Demo page:</dt>
+            <dd><a href="/">Basic form dictation</a></dd>
+            <dd class="active"><a href="#">Application control demo</a></dd>
+        </dl>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <h3>Application control demo</h3>
+        <h5 class="subheader">Say "next" to navigate to next slide, and "back" to go back (you can also try polish equivalents like: "dalej" and "powrót"). </h5>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="slideshow-wrapper">
+                    <div class="preloader"></div>
+                    <ul id="gallery" data-orbit data-options="pause_on_hover:false; timer_speed:0; timer:false;" style="min-height: 400px; height: 400px;">
+                        <li>
+                            <img src="img/demo1.jpg" />
+                            <div class="orbit-caption">One</div>
+                        </li>
+                        <li>
+                            <img src="img/demo2.jpg" />
+                            <div class="orbit-caption">Two</div>
+                        </li>
+                        <li>
+                            <img src="img/demo3.jpg" />
+                            <div class="orbit-caption">Three</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="js/foundation.js"></script>
+<script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/foundation/foundation.orbit-ext.js"></script>
+
+
+
+<script src="js/noty/jquery.noty.js"></script>
+<script src="js/noty/themes/default.js"></script>
+<script src="js/noty/layouts/top.js"></script>
+<script src="js/noty/layouts/topCenter.js"></script>
+<script src="js/noty/layouts/topLeft.js"></script>
+<script src="js/noty/layouts/topRight.js"></script>
+
+<script>
+    $("#gallery").on("orbit:ready", function(event, orbit) {
+        console.info("ready");
+    });
+
+    $(document).foundation();
+</script>
+</body>
+</html>
