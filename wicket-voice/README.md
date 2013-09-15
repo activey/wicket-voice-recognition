@@ -69,8 +69,9 @@ here:
 ```java
 add(new KeywordBasedBehavior() {
 
-	@Override protected void noKeywordRecognized(String text, AjaxRequestTarget target) { // when none of defined
-	keywords is recognized, but hey, there was something ... }
+	@Override protected void noKeywordRecognized(String text, AjaxRequestTarget target) { 
+		// when none of defined	keywords is recognized, but hey, there was something ... 
+	}
 
 	protected void initKeywords(IKeywordManager manager) {
 		manager.when("first", new IKeywordAction() {
