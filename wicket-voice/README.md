@@ -41,16 +41,9 @@ TextFieldDictationBehavior
 Behavior implements Voice Recognition JavaScript callbacks around given component, whereas Behavior is atteched to.
 It's just a complex wrapped around some of html components:
 
-```html
-<ul>
-  <li>
-	  <input type="text" />
-  </li>
-  <li>
-	  <textarea />
-  </li>
-</ul>
-```
+
+* <input type="text" />
+* <textarea />
 
 To use it, just do simply:
 
